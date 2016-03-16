@@ -1,484 +1,409 @@
-<html><head><style type="text/css">pre { margin: 1px }
-.fmt0 {  } /* normal */
-.fmt1 {  } /* background */
-.fmt2 { background-color: #ffcabf; } /* line:error */
-.fmt3 { background-color: #fffbbf; } /* line:warning */
-.fmt4 { background-color: #bfd6ff; } /* line:badbox */
-.fmt5 {  } /* line:bookmark */
-.fmt6 {  } /* line:bookmark0 */
-.fmt7 {  } /* line:bookmark1 */
-.fmt8 {  } /* line:bookmark2 */
-.fmt9 {  } /* line:bookmark3 */
-.fmt10 {  } /* line:bookmark4 */
-.fmt11 {  } /* line:bookmark5 */
-.fmt12 {  } /* line:bookmark6 */
-.fmt13 {  } /* line:bookmark7 */
-.fmt14 {  } /* line:bookmark8 */
-.fmt15 {  } /* line:bookmark9 */
-.fmt16 { color: #555580; } /* magicComment */
-.fmt17 { background-color: #a8cf83; } /* commentTodo */
-.fmt18 { color: #808080; } /* comment */
-.fmt19 { color: #800000; } /* keyword */
-.fmt20 { font-weight: 700;color: #0095ff; } /* extra-keyword */
-.fmt21 { color: #808000; } /* math-keyword */
-.fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
-.fmt23 { font-weight: 700;color: #0055ff; } /* align-ampersand */
-.fmt24 { color: #008080; } /* verbatim */
-.fmt25 { color: #800000; } /* sweave-block */
-.fmt26 { font-weight: 700;color: #0095ff; } /* sweave-delimiter */
-.fmt27 { color: #800000; } /* pweave-block */
-.fmt28 { font-weight: 700;color: #0095ff; } /* pweave-delimiter */
-.fmt29 { color: #804000; } /* picture */
-.fmt30 { font-weight: 700;color: #c00000;background-color: #ffff7f; } /* braceMatch */
-.fmt31 { font-weight: 700;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
-.fmt32 { color: #000000;background-color: #ffff40; } /* search */
-.fmt33 { color: #008000; } /* numbers */
-.fmt34 { color: #509600; } /* math-delimiter */
-.fmt35 { color: #ff0000; } /* text */
-.fmt36 { color: #ff0088; } /* escapeseq */
-.fmt37 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
-.fmt38 { border-bottom: 1px dashed #008000; } /* wordRepetition */
-.fmt39 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
-.fmt40 { text-decoration: line-through; } /* badWord */
-.fmt41 { border-bottom: 1px dashed #000080; } /* grammarMistake */
-.fmt42 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
-.fmt43 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
-.fmt44 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
-.fmt45 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
-.fmt46 { background-color: #ffbf9f; } /* latexSyntaxMistake */
-.fmt47 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
-.fmt48 { color: #000080; } /* environment */
-.fmt49 { color: #008000; } /* referencePresent */
-.fmt50 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
-.fmt51 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
-.fmt52 { color: #008000; } /* citationPresent */
-.fmt53 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
-.fmt54 { color: #008000; } /* packagePresent */
-.fmt55 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
-.fmt56 { font-weight: 700;color: #000000; } /* structure */
-.fmt57 { background-color: #eeeeff; } /* current */
-.fmt58 { background-color: #aaffff; } /* selection */
-.fmt59 { background-color: #ffaaaa; } /* replacement */
-.fmt60 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
-.fmt61 { background-color: #aaffaa; } /* diffAdd */
-.fmt62 { background-color: #ffff50; } /* diffReplace */
-.fmt63 { background-color: #aaffaa; } /* previewSelection */
-.fmt64 { font-weight: 700;color: #0095ff; } /* txs-test */
-.fmt65 { color: #008000; } /* txs-test-pass */
-.fmt66 { color: #c00000; } /* txs-test-fail */
-.fmt67 { color: #ea8800; } /* txs-test-warn */
-.fmt68 { color: #808000; } /* txs-test-qdebug */
-.fmt69 { color: #ffa500; } /* dtx:guard */
-.fmt70 { font-weight: 700;color: #006400; } /* dtx:macro */
-.fmt71 { color: #008080; } /* dtx:verbatim */
-.fmt72 { color: #cc8100; } /* dtx:specialchar */
-.fmt73 { font-weight: 700;color: #10c010; } /* dtx:commands */
-.fmt74 { color: #b200ff; } /* lua:keyword */
-.fmt75 { color: #808080; } /* lua:comment */
-.fmt76 { color: #804000; } /* asymptote:block */
-.fmt77 { color: #800080; } /* asymptote:keyword */
-.fmt78 { color: #808000; } /* asymptote:type */
-.fmt79 { color: #008000; } /* asymptote:numbers */
-.fmt80 { color: #000080; } /* asymptote:string */
-.fmt81 { color: #808080; } /* asymptote:comment */
-.fmt82 { background-color: #ffff7f; } /* preedit */
-</style></head><body><pre><span class="fmt19">\documentclass</span>{<span class="fmt54">article</span>} </pre>
-<pre><span class="fmt19">\title</span>{Seminar Economics of Psychology of Risk and Time}  </pre>
-<pre><span class="fmt19">\author</span>{Erin Belles} </pre>
-<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">graphicx</span>} </pre>
-<pre> </pre>
-<pre><span class="fmt19">\large</span> </pre>
-<pre> </pre>
-<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">document</span></span><span class="fmt20">}</span> </pre>
-	<pre><span class="fmt19">\maketitle</span>  </pre>
-	<pre> Assignment 1, Group 7, Deadline: March 11, 2016 <span class="fmt37">TiSEM</span>  </pre>
-	<pre> </pre>
-	<pre><span class="fmt20">\section</span>{} </pre>
-	<pre><span class="fmt19">\textbf</span>{ Calculate the certainty equivalent of the prospect (0.2, <span class="fmt37">€40</span>; 0.6, <span class="fmt37">€50</span>; 0.2, <span class="fmt37">€30</span>), under: }  </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{4mm} </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\textbf</span>{ a) Expected utility theory with the <span class="fmt39">utility</span> function:  </pre>
-		<pre><span class="fmt34">$</span><span class="fmt33">u(x)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{x}{10}</span><span class="fmt34">$</span>  </pre>
-		<pre>	with total wealth = 0.}  </pre>
-	<pre> </pre>
-	<pre>	<span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre>		EV=	0.2	x <span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{40}{10}</span><span class="fmt34">$</span> +	0.6	x <span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{50}{10}</span><span class="fmt34">$</span> + 0.2 x <span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{30}{10}</span><span class="fmt34">$</span> =	4.<span class="fmt38">4</span> </pre>
-	<pre>	CE:	<span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{m}{10}</span><span class="fmt34">$</span> = 4.<span class="fmt38">4</span> <span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span> m=44  </pre>
-	<pre>	 </pre>
-	<pre>	The	certainty equivalent is	44 </pre>
-	<pre>	<span class="fmt19">\vspace</span>{4mm} </pre>
-	<pre>	 </pre>
-	<pre>	<span class="fmt19">\textbf</span>{ b) Rank dependent utility with the <span class="fmt38">utility</span> function: </pre>
-		<pre><span class="fmt34">$</span><span class="fmt33">u(x)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{x}{10}</span><span class="fmt34">$</span> and <span class="fmt34">$</span><span class="fmt33">w(p)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt33">p^{2}</span><span class="fmt34">$</span> </pre>
-		<pre>	 with total wealth = 0.}    </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre>Probability	of	outcome	q	or	better: </pre>
-	<pre> </pre>
-	<pre>q=40,	p=(0.2)	 +	(0.6)	=	0.8 </pre>
-	<pre> </pre>
-	<pre>q=50,	p=(0.6) </pre>
-	<pre> </pre>
-	<pre>q=30,	p=(0.2)	 +	(0.6)	+ (0.2)	=	1 </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span> {2mm} </pre>
-	<pre> </pre>
-	<pre>Probability	outcome	is	strictly	better	than q: </pre>
-	<pre> </pre>
-	<pre> </pre>
-	<pre>q=40,	p=0.6 </pre>
-	<pre> </pre>
-	<pre>q=50,	p=0 </pre>
-	<pre> </pre>
-	<pre>q=30,	p=(0.2)	+	(0.6)	=	0.8 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w(p)=p^2</span><span class="fmt34">$</span> </pre>
-	<pre> </pre>
-	<pre>w(0.8)	-	 w(0.6)	=	<span class="fmt34">$</span><span class="fmt33">(0.8)^2</span><span class="fmt34">$</span> - <span class="fmt34">$</span><span class="fmt33">(0.6)^2</span><span class="fmt34">$</span>=	0.28 </pre>
-	<pre> </pre>
-	<pre>w(0.6)	-	 w(0.<span class="fmt38">0</span>)	=	<span class="fmt34">$</span><span class="fmt33">(0.0)^2</span><span class="fmt34">$</span> - <span class="fmt34">$</span><span class="fmt33">(0.0)^2</span><span class="fmt34">$</span>=	0.36 </pre>
-	<pre> </pre>
-	<pre>w(1)	-	 w(0.8)	=	<span class="fmt34">$</span><span class="fmt33">(1)^2</span><span class="fmt34">$</span> - <span class="fmt34">$</span><span class="fmt33">(0.8)^2</span><span class="fmt34">$</span> =	0.36 </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span> {2mm} </pre>
-	<pre> </pre>
-	<pre>Expected	utility	using	these	updated	probability	weights	is: </pre>
-	<pre> </pre>
-	<pre>EU	=	0.28	x	<span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{40}{10}</span><span class="fmt34">$</span>	 +	0.36 x	<span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{50}{10}</span><span class="fmt34">$</span>	+	0.36 x <span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{30}{10}</span><span class="fmt34">$</span>	=	4 </pre>
-	<pre> </pre>
-	<pre>CE:	<span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{m}{10}</span><span class="fmt34">$</span>	=	4 <span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span> m	=	40 </pre>
-	<pre> </pre>
-	<pre>The	certainty	equivalent	is	40. </pre>
-	<pre> </pre>
-	<pre><span class="fmt20">\section</span>{} </pre>
-	<pre><span class="fmt19">\textbf</span>{Consider the prospects A = (1, <span class="fmt37">€3000</span>), B = (0.8, <span class="fmt37">€4000</span>; 0.2, €0), <span class="fmt19">\linebreak</span> C = (0.25, <span class="fmt37">€3000</span>; 0.75, €0), and D = (0.2, <span class="fmt37">€4000</span>; 0.8, €0). <span class="fmt19">\linebreak</span>} </pre>
-	<pre>	   </pre>
-	<pre><span class="fmt19">\textbf</span>{It has been found (e.g., <span class="fmt37">Starmer</span>, 2000, Journal of Economic Literature) that most people prefer prospect A over <span class="fmt38">prospect</span> B and <span class="fmt38">prospect</span> D over <span class="fmt38">prospect</span> C.}  </pre>
-	<pre>	   </pre>
-	<pre>	 <span class="fmt19">\vspace</span>{2mm}  </pre>
-	<pre>	   </pre>
-	<pre><span class="fmt19">\textbf</span>{ a) Show that this choice pattern violates Expected Utility theory.}  </pre>
-	<pre>  </pre>
-	<pre>  <span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre>  </pre>
-	<pre> Under expected utility, preferences for prospect A implies:  </pre>
-	<pre>  </pre>
-	<pre> u(3000) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> 0.8 u(4000) + 0.2 u(0) </pre>
-	<pre>  </pre>
-	<pre> <span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}</span><span class="fmt34">$</span>(u(3000) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> 0.8 u(4000) + 0.2 u(0)) </pre>
-	<pre>   </pre>
-	<pre> <span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span> 0.25 u(3000) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> 0.2 u (4000) + 0.05 u(0) </pre>
-	<pre>     </pre>
-	<pre>			    +0.75 u(0) </pre>
-	<pre>     </pre>
-	<pre> <span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span> 0.25 u(3000)+ 0.75 u(0) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> 0.2 u(4000)+ 0.8 u (4000) </pre>
-	<pre>  </pre>
-	<pre> <span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre>  </pre>
-	<pre> Preferring prospect D to C implies:  </pre>
-	<pre>  </pre>
-	<pre> 0.2u(4000) + 0.8 u(0) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> 0.<span class="fmt37">25u</span>(3000) +0.<span class="fmt37">75u</span>(0) </pre>
-	<pre>   </pre>
-	<pre>   <span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre>   </pre>
-	<pre> Therefore, under prospect theory an individual cannot prefer A to B and D  </pre>
-	<pre>  </pre>
-	<pre> to C. <span class="fmt19">\\</span> </pre>
-	<pre>  </pre>
-	<pre><span class="fmt19">\textbf</span>{ b) Show that Disappointment theory as presented and parameterized on the slides </pre>
-		<pre>(i.e., with u(x) = <span class="fmt38">x</span> and θ = 0.0002) can accommodate the observed choice pattern.)}  </pre>
-	<pre>   </pre>
-	<pre>  <span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre>   </pre>
-	<pre>  EV(A) = 3000		D(A) = 3000		 </pre>
-	<pre>   </pre>
-	<pre>  EV(B) = EU = 3200 </pre>
-	<pre>   </pre>
-	<pre>  D(B)=0.8(4000+0.<span class="fmt37">0002x</span><span class="fmt34">$</span><span class="fmt33">(4000-3200)^2</span><span class="fmt34">$</span> + 0.2(0-0.<span class="fmt37">0002x</span><span class="fmt34">$</span><span class="fmt33">(0-3200)^2</span><span class="fmt34">$</span>)=2892.8 </pre>
-	<pre>   </pre>
-	<pre>  Hence, D(A) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> D(B)<span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre>EV(C) = EU = 750 </pre>
-	<pre> </pre>
-	<pre>D(C)=0.25(3000+0.<span class="fmt37">0002x</span><span class="fmt34">$</span><span class="fmt33">(3000-750)^2</span><span class="fmt34">$</span>) + 0.75(0-0.<span class="fmt37">0002x</span><span class="fmt34">$</span><span class="fmt33">(0-750)^2</span><span class="fmt34">$</span>)=918.75 </pre>
-	<pre> </pre>
-	<pre>EV(D) = EU = 800 </pre>
-	<pre> </pre>
-	<pre>D(<span class="fmt38">D</span>)=0.2(4000+0.<span class="fmt37">0002x</span><span class="fmt34">$</span><span class="fmt33">(4000-800)^2</span><span class="fmt34">$</span>) + 0.8(0-0.<span class="fmt37">0002x</span><span class="fmt34">$</span><span class="fmt33">(0-800)^2</span><span class="fmt34">$</span>)=1107.2 </pre>
-	<pre> </pre>
-	<pre>  Hence, D(<span class="fmt38">D</span>) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> D(C)<span class="fmt19">\\</span> </pre>
-	<pre>   </pre>
-	<pre><span class="fmt19">\textbf</span>{ c) Show that Cumulative Prospect Theory can accommodate the choice pattern. }    </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre> </pre>
-	<pre>Using the parametrization by <span class="fmt37">Tversky</span> and <span class="fmt37">Kahnemann</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{3mm} </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(A) </pre>
-	<pre> </pre>
-	<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>{|c|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|} </pre>
-		<pre>	<span class="fmt19">\hline</span> </pre>
-		<pre>		x    <span class="fmt23">&amp;</span> p <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>         <span class="fmt23">&amp;</span> u(x)        <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>U(x)  <span class="fmt19">\\</span>  <span class="fmt19">\hline</span> </pre>
-		<pre>			3000 <span class="fmt23">&amp;</span> 1 <span class="fmt23">&amp;</span> w+(1) - w+(0) = 1 &amp;1147.8 <span class="fmt23">&amp;</span> 1147.8 <span class="fmt19">\\</span> </pre>
-		<pre>	<span class="fmt19">\hline</span> </pre>
-		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>  </pre>
-	<pre><span class="fmt19">\vspace</span>{7mm} </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(B) </pre>
-	<pre> </pre>
-	<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>{|c|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|} </pre>
-		<pre>		<span class="fmt19">\hline</span> </pre>
-		<pre>		x    <span class="fmt23">&amp;</span> p <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>             <span class="fmt23">&amp;</span> u(x) <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>U(x) <span class="fmt19">\\</span>  <span class="fmt19">\hline</span> </pre>
-		<pre>		4000 <span class="fmt23">&amp;</span> 0.8 <span class="fmt23">&amp;</span> w+(0.8) - w+(0) = <span class="fmt38">0</span>.607 <span class="fmt23">&amp;</span> 63.245  <span class="fmt23">&amp;</span>  1478.47 <span class="fmt19">\\</span> </pre>
-		<pre>		<span class="fmt19">\hline</span> </pre>
-		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span> <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(C) </pre>
-	<pre> </pre>
-	<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>{|c|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|} </pre>
-		<pre>	<span class="fmt19">\hline</span> </pre>
-		<pre>	x    <span class="fmt23">&amp;</span> p <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>             <span class="fmt23">&amp;</span> u(x) <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>U(x) <span class="fmt19">\\</span>  <span class="fmt19">\hline</span> </pre>
-		<pre>	3000 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w+(0.25) = 0.2707 <span class="fmt23">&amp;</span> 1147.8  <span class="fmt23">&amp;</span>  333.67 <span class="fmt19">\\</span> </pre>
-		<pre>	<span class="fmt19">\hline</span> </pre>
-		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span> <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(D) </pre>
-	<pre> </pre>
-	<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>{|c|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|} </pre>
-		<pre>	<span class="fmt19">\hline</span> </pre>
-		<pre>	x    <span class="fmt23">&amp;</span> p <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>             <span class="fmt23">&amp;</span> u(x) <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>U(x) <span class="fmt19">\\</span>  <span class="fmt19">\hline</span> </pre>
-		<pre>	4000 <span class="fmt23">&amp;</span> 0.2 <span class="fmt23">&amp;</span> w+(0.2) = 0.261 <span class="fmt23">&amp;</span> 1478.8  <span class="fmt23">&amp;</span>  385.53 <span class="fmt19">\\</span> </pre>
-		<pre>	<span class="fmt19">\hline</span> </pre>
-		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span> <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{1mm} </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span> <span class="fmt37">CPT</span>(A) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> <span class="fmt37">CPT</span>(B)   </pre>
-	<pre> </pre>
-	<pre> <span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span>  <span class="fmt37">CPT</span>(D) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> <span class="fmt37">CPT</span>(C) </pre>
-	<pre> </pre>
-	<pre><span class="fmt20">\section</span>{} </pre>
-	<pre> <span class="fmt19">\textbf</span>{Assume Cumulative Prospect Theory as defined and parameterized by <span class="fmt37">Tversky</span> and <span class="fmt37">Kahneman</span> (1992) (see lecture slides). Calculate the certainty equivalents and risk <span class="fmt37">premia</span> of the following prospects: }  </pre>
-	<pre>   </pre>
-	<pre>  <span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre>   </pre>
-	<pre><span class="fmt19">\textbf</span>{ a) (0.25, <span class="fmt37">€75</span>; 0.25, <span class="fmt37">€50</span>; 0.25, <span class="fmt37">€25</span>; 0.25, €0)}  </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre> </pre>
-	<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>{|c|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|} </pre>
-		<pre>		<span class="fmt19">\hline</span> </pre>
-		<pre>		x  <span class="fmt23">&amp;</span> p    <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>                         <span class="fmt23">&amp;</span> u(x) = U(x) <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>U(x)  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>		75 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w+(0.25)-w+(0)=<span class="fmt38">0</span>.29074    <span class="fmt23">&amp;</span> 44.674      <span class="fmt23">&amp;</span> 12.989 <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>		50 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w+(0.50)-w+(0.25)=0.12990 <span class="fmt23">&amp;</span> 31.268      <span class="fmt23">&amp;</span> 4.062  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>		25 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w+(0.75)-w+(0.50)=0.14763 <span class="fmt23">&amp;</span> 16.990      <span class="fmt23">&amp;</span> 2.508  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>		0  <span class="fmt23">&amp;</span> <span class="fmt38">0</span>.25 <span class="fmt23">&amp;</span> w+(1)-w+(0.75)=0.43173    <span class="fmt23">&amp;</span> 0           <span class="fmt23">&amp;</span> <span class="fmt38">0</span>      <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span> <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre> </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^+(x)</span><span class="fmt34">$</span> = <span class="fmt34">$</span><span class="fmt33">x^{0.88}</span><span class="fmt34">$</span> if x <span class="fmt34">$</span><span class="fmt21">\geq</span><span class="fmt34">$</span> 0 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^-(x)</span><span class="fmt34">$</span> = 2.25 * <span class="fmt34">$</span><span class="fmt33">-(-x)^{0.88}</span><span class="fmt34">$</span> if x <span class="fmt34">$</span><span class="fmt21">\textless</span><span class="fmt34">$</span> 0     (with <span class="fmt34">$</span><span class="fmt21">\lambda</span><span class="fmt34">$</span> = 2.25) <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\Large</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^+(p)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{p^{0.61}}{(p^{0.61}+(1-p)^{0.61})^{1/0.61}}</span><span class="fmt34">$</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^-(p)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{p^{0.69}}{(p^{0.69}+(1-p)^{0.69})^{1/0.69}}</span><span class="fmt34">$</span> <span class="fmt19">\\</span>  </pre>
-	<pre> </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^+(0)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{0^{0.61}}{(0^{0.61}+(1)^{0.61})^{1/0.61}}</span><span class="fmt34">$</span> = 0 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^+(0.25)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{0.25^{0.61}}{(0.25^{0.61}+(0.75)^{0.61})^{1/0.61}}</span><span class="fmt34">$</span> = 0.29074 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^+(0.50)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{0.50^{0.61}}{(0.50^{0.61}+(0.50)^{0.61})^{1/0.61}}</span><span class="fmt34">$</span> = 0.42064 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^+(0.75)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{0.75^{0.61}}{(0.75^{0.61}+(0.25)^{0.61})^{1/0.61}}</span><span class="fmt34">$</span> = 0.56827 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^+(1)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{1^{0.61}}{(1^{0.61}+(0)^{0.61})^{1/0.61}}</span><span class="fmt34">$</span> = 1 <span class="fmt19">\\</span>  </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\normalsize</span> </pre>
-	<pre> </pre>
-	<pre>0.29074 - 0 = <span class="fmt38">0</span>.29074 </pre>
-	<pre> </pre>
-	<pre>0.42064 - 0.29074 = <span class="fmt38">0</span>.12990 </pre>
-	<pre> </pre>
-	<pre>0.56827 - 0.42064 = <span class="fmt38">0</span>.14763 </pre>
-	<pre> </pre>
-	<pre>1 - 0.56827 = <span class="fmt38">0</span>.43173 <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^+(75)</span><span class="fmt34">$</span> = <span class="fmt34">$</span><span class="fmt33">75^{0.88}</span><span class="fmt34">$</span> = 44.674 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^+(50)</span><span class="fmt34">$</span> = <span class="fmt34">$</span><span class="fmt33">50^{0.88}</span><span class="fmt34">$</span> = 31.268 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^+(25)</span><span class="fmt34">$</span> = <span class="fmt34">$</span><span class="fmt33">25^{0.88}</span><span class="fmt34">$</span> = 16.990 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^+(0)</span><span class="fmt34">$</span> = <span class="fmt34">$</span><span class="fmt33">0^{0.88}</span><span class="fmt34">$</span> = 0 <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span> = 12.989 + 4.062 + 2.508 + 0 = 19.559 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">CE^{0.88}</span><span class="fmt34">$</span> = 19.559 <span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span> CE = 29.339 </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{1.5mm} </pre>
-	<pre> </pre>
-	<pre>EV = <span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(75)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(50)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(25)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(0)=37.5</span><span class="fmt34">$</span> </pre>
-	<pre> </pre>
-	<pre>RP = 37.5 - 29.339 = 8.161 <span class="fmt19">\\</span>  </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\textbf</span>{ b) (0.25, <span class="fmt37">€50</span>; 0.25, <span class="fmt37">€25</span>; 0.25, €0; 0.25, -<span class="fmt37">€25</span>)}  </pre>
-	<pre> </pre>
-	<pre> <span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre>  </pre>
-	<pre> <span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>{|c|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|} </pre>
-		<pre> 	<span class="fmt19">\hline</span> </pre>
-		<pre> 	x  <span class="fmt23">&amp;</span> p    <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>                         <span class="fmt23">&amp;</span> u(x) = U(x) <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>U(x)  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre> 	50 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w+(0.25)-w+(0)=<span class="fmt38">0</span>.29074    <span class="fmt23">&amp;</span> 31.268      <span class="fmt23">&amp;</span> 9.091 <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre> 	25 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w+(0.50)-w+(0.25)=0.12990 <span class="fmt23">&amp;</span> 16.990     <span class="fmt23">&amp;</span> 2.207  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre> 	0 <span class="fmt23">&amp;</span> <span class="fmt38">0</span>.25 <span class="fmt23">&amp;</span> w+(0.75)-w+(0.50)=0.14763 <span class="fmt23">&amp;</span> 0      <span class="fmt23">&amp;</span> <span class="fmt38">0</span>  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre> 	-25  <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w-(0.25)-w-(0)=<span class="fmt38">0</span>.29352    <span class="fmt23">&amp;</span> -38.227           <span class="fmt23">&amp;</span> -11.220      <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre> <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span> <span class="fmt19">\\</span> <span class="fmt19">\\</span>  </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\Large</span>  </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^-(0.25)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{0.25^{0.69}}{(0.25^{0.69}+(0.75)^{0.69})^{1/0.69}}</span><span class="fmt34">$</span> = 0.29352 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^-(0)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{0^{0.69}}{(0^{0.69}+(1)^{0.69})^{1/0.69}}</span><span class="fmt34">$</span> = 0 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^-(-25)</span><span class="fmt34">$</span> = 2.25 * <span class="fmt34">$</span><span class="fmt33">-(--25)^{0.88}</span><span class="fmt34">$</span> = -38.227 <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\normalsize</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span> = 9.091 + 2.207 + 0+ -11.220 = 0.078 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">CE^{0.88}</span><span class="fmt34">$</span> = 0.078 <span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span> CE = 0.055 </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{1.5mm} </pre>
-	<pre> </pre>
-	<pre>EV = <span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(50)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(25)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(0)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(-25)=</span><span class="fmt33"> </span><span class="fmt33">12.50</span><span class="fmt33"> </span><span class="fmt34">$</span> </pre>
-	<pre> </pre>
-	<pre>RP = 12.5 - 0.055 = 12.445 <span class="fmt19">\\</span>  </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\textbf</span>{ c) (0.25, <span class="fmt37">€25</span>; 0.25, €0; 0.25, -<span class="fmt37">€25</span>; 0.25, -<span class="fmt37">€50</span>)} </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre> </pre>
-	<pre>   <span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>{|c|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|} </pre>
-		<pre>   	<span class="fmt19">\hline</span> </pre>
-		<pre>   	x  <span class="fmt23">&amp;</span> p    <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>                         <span class="fmt23">&amp;</span> u(x) = U(x) <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>U(x)  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>   	25 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w+(0.25)-w+(0)=<span class="fmt38">0</span>.29074    <span class="fmt23">&amp;</span> 16.990      <span class="fmt23">&amp;</span> 4.940 <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>   	0 <span class="fmt23">&amp;</span> <span class="fmt38">0</span>.25 <span class="fmt23">&amp;</span> w+(0.50)-w+(0.25)=0.12990 <span class="fmt23">&amp;</span> 0     <span class="fmt23">&amp;</span> <span class="fmt38">0</span>  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>   	-25 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w-(0.50)-w-(0.25)=0.16047 <span class="fmt23">&amp;</span> -38.227      <span class="fmt23">&amp;</span> -6.134  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>   	-50  <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w-(0.25)-w-(0)=<span class="fmt38">0</span>.29352    <span class="fmt23">&amp;</span> -70.352           <span class="fmt23">&amp;</span> -20.650      <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>   <span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span> <span class="fmt19">\\</span> <span class="fmt19">\\</span>  </pre>
-	<pre>  </pre>
-	<pre> <span class="fmt19">\Large</span> </pre>
-	<pre>  </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^-(0.50)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{0.50^{0.69}}{(0.50^{0.69}+(0.50)^{0.69})^{1/0.69}}</span><span class="fmt34">$</span> = 0.45399 <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\normalsize</span> </pre>
-	<pre> </pre>
-	<pre>0.45399-0.29352=0.16047 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^-(-50)</span><span class="fmt34">$</span> = 2.25 * <span class="fmt34">$</span><span class="fmt33">-(--50)^{0.88}</span><span class="fmt34">$</span> = -70.352 <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span> = 4.940 + 0 + -6.134 + -20.650 = -21.844 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">CE^{0.88}</span><span class="fmt34">$</span> = -21.844 <span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span> CE = -13.236 </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{1.5mm} </pre>
-	<pre> </pre>
-	<pre>EV = <span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(25)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(0)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(-25)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(-50)=</span><span class="fmt33"> </span><span class="fmt33">-12.50</span><span class="fmt34">$</span> </pre>
-	<pre> </pre>
-	<pre>RP = 12.50 - -13.236 = 0.736 <span class="fmt19">\\</span>   </pre>
-	<pre>  </pre>
-	<pre><span class="fmt19">\textbf</span>{ d) (0.25, €0; 0.25, -<span class="fmt37">€25</span>; 0.25, -<span class="fmt37">€50</span>; 0.25, -<span class="fmt37">€75</span>)}     </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{2mm} </pre>
-	<pre> </pre>
-	<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span>{|c|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|<span class="fmt38">c</span>|} </pre>
-		<pre>	<span class="fmt19">\hline</span> </pre>
-		<pre>	x  <span class="fmt23">&amp;</span> p    <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>                         <span class="fmt23">&amp;</span> u(x) = U(x) <span class="fmt23">&amp;</span> <span class="fmt34">$</span><span class="fmt21">\pi</span><span class="fmt34">$</span>U(x)  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>	0 <span class="fmt23">&amp;</span> <span class="fmt38">0</span>.25 <span class="fmt23">&amp;</span> w+(0.25)-w+(0)=<span class="fmt38">0</span>.29074    <span class="fmt23">&amp;</span> 0      <span class="fmt23">&amp;</span> <span class="fmt38">0</span> <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>	-25 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w-(0.75)-w-(0.50)=0.17241 <span class="fmt23">&amp;</span> -38.227     <span class="fmt23">&amp;</span> -6.591  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>	-50 <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w-(0.50)-w-(0.25)=0.16047 <span class="fmt23">&amp;</span> -70.352      <span class="fmt23">&amp;</span> -11.289  <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre>	-75  <span class="fmt23">&amp;</span> 0.25 <span class="fmt23">&amp;</span> w-(0.25)-w-(0)=<span class="fmt38">0</span>.29352    <span class="fmt23">&amp;</span> -100.516           <span class="fmt23">&amp;</span> -29.503      <span class="fmt19">\\</span> <span class="fmt19">\hline</span> </pre>
-		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">tabular</span></span><span class="fmt20">}</span> <span class="fmt19">\\</span> <span class="fmt19">\\</span>  </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\Large</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^-(0.75)</span><span class="fmt33"> </span><span class="fmt33">=</span><span class="fmt33"> </span><span class="fmt21">\frac</span><span class="fmt33">{0.75^{0.69}}{(0.75^{0.69}+(0.25)^{0.69})^{1/0.69}}</span><span class="fmt34">$</span> = 0.62640 <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\normalsize</span> </pre>
-	<pre> </pre>
-	<pre>0.62640-0.45399= 0.17241 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^-(-75)</span><span class="fmt34">$</span> = 2.25 * <span class="fmt34">$</span><span class="fmt33">-(--75)^{0.88}</span><span class="fmt34">$</span> = -100.516 <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span> = 0 + -6.591 + -11.289 + -29.503 = -47.383 </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">CE^{0.88}</span><span class="fmt34">$</span> = -47.383 <span class="fmt34">$</span><span class="fmt21">\rightarrow</span><span class="fmt34">$</span> CE = -31.909 </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\vspace</span>{1.5mm} </pre>
-	<pre> </pre>
-	<pre>EV = <span class="fmt34">$</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(0)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(-25)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(-50)+</span><span class="fmt21">\frac</span><span class="fmt33">{1}{4}(-75)=</span><span class="fmt33"> </span><span class="fmt33">-37.50</span><span class="fmt34">$</span> </pre>
-	<pre> </pre>
-	<pre>RP = -37.50 - -31.909 = -5.591 <span class="fmt19">\\</span>   </pre>
-	<pre> </pre>
-	<pre><span class="fmt20">\section</span>{} </pre>
-	<pre><span class="fmt19">\textbf</span>{Consider the prospects E = (0.5, -3000; 0.5, 4500), <span class="fmt19">\linebreak</span> F = (0.25, -6000; 0.75, 3000), G = (0.5, -1500; 0.5, 4500), and <span class="fmt19">\linebreak</span> H = (0.25, -3000; 0.75, 3000).    </pre>
-		<pre>Levy and <span class="fmt38">Levy</span> (2002; Management Science) show that when asked to choose between prospects E and F, 71<span class="fmt19">\%</span> of subjects in the laboratory prefer E. In addition, while 76<span class="fmt19">\%</span> of subjects <span class="fmt39">prefer</span> to have prospect G rather <span class="fmt38">prospect</span> H. Based on these results, Levy and <span class="fmt38">Levy</span> (2002) conclude that “we reject the S-shaped [utility] function [of <span class="fmt37">CPT</span>].”    </pre>
-		<pre>Do you agree with this conclusion? Why (not)? } <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre>Using the example from the lecture slides, people can prefer E to F and G to H without violating the expectations of an s-shaped utility curve (see the first graph below). The intuition is that losing x hurts more than gaining x brings pleasure. Although people should prefer 0.75 x 3000 to 0.5 x 4500, the possible loss of 6000 with probability of 0.25 hurts too much and will outweigh the extra utility from 0.75 x 3000.<span class="fmt19">\\</span> <span class="fmt19">\\</span> <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">w^+(p)=w^-(p)=p^2</span><span class="fmt34">$</span>  ;   </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^+(x)=x^5</span><span class="fmt34">$</span>  ;   </pre>
-	<pre><span class="fmt34">$</span><span class="fmt33">u^-(x)=-2x^5</span><span class="fmt34">$</span> <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(E) = <span class="fmt34">$</span><span class="fmt33">w^-(0.5)u^-(-3000)+w^+(0.5)u^+(4500)</span><span class="fmt34">$</span>  </pre>
-	<pre> </pre>
-	<pre>= <span class="fmt34">$</span><span class="fmt33">0.5^2</span><span class="fmt34">$</span> x (-2) x <span class="fmt34">$</span><span class="fmt33">3000^5</span><span class="fmt34">$</span> + <span class="fmt34">$</span><span class="fmt33">0.5^2</span><span class="fmt34">$</span> x <span class="fmt34">$</span><span class="fmt33">4500^5</span><span class="fmt34">$</span> = 4.6 x <span class="fmt34">$</span><span class="fmt33">10^6</span><span class="fmt34">$</span>  <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(F) = <span class="fmt34">$</span><span class="fmt33">w^-(0.25)u^-(-6000)+w^+(0.75)u^+(3000)</span><span class="fmt34">$</span> </pre>
-	<pre> </pre>
-	<pre>= <span class="fmt34">$</span><span class="fmt33">0.25^2</span><span class="fmt34">$</span> x (-2) x <span class="fmt34">$</span><span class="fmt33">6000^5</span><span class="fmt34">$</span> + <span class="fmt34">$</span><span class="fmt33">0.75^2</span><span class="fmt34">$</span> x <span class="fmt34">$</span><span class="fmt33">3000^5</span><span class="fmt34">$</span> = -8.35 x <span class="fmt34">$</span><span class="fmt33">10^{17}</span><span class="fmt34">$</span> <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(E) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> <span class="fmt37">CPT</span>(F) <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(G) = <span class="fmt34">$</span><span class="fmt33">w^-(0.5)u^-(-1500)+w^+(0.5)u^+(4500)</span><span class="fmt34">$</span> </pre>
-	<pre> </pre>
-	<pre>= <span class="fmt34">$</span><span class="fmt33">0.5^2</span><span class="fmt34">$</span> x (-2) x <span class="fmt34">$</span><span class="fmt33">1500^2</span><span class="fmt34">$</span> + <span class="fmt34">$</span><span class="fmt33">0.25^2</span><span class="fmt34">$</span> x <span class="fmt34">$</span><span class="fmt33">4500^5</span><span class="fmt34">$</span> = 4.58 x <span class="fmt34">$</span><span class="fmt33">10^{17}</span><span class="fmt34">$</span> <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(H) = <span class="fmt34">$</span><span class="fmt33">w^-(0.25)u^-(3000)+w^+(0.75)u^+(3000)</span><span class="fmt34">$</span> </pre>
-	<pre> </pre>
-	<pre>= <span class="fmt34">$</span><span class="fmt33">0.25^2</span><span class="fmt34">$</span> x (-2) x <span class="fmt34">$</span><span class="fmt33">3000^5</span><span class="fmt34">$</span> + <span class="fmt34">$</span><span class="fmt33">0.75^2</span><span class="fmt34">$</span> x <span class="fmt34">$</span><span class="fmt33">3000^5</span><span class="fmt34">$</span> = 1.06 x <span class="fmt34">$</span><span class="fmt33">10^{17}</span><span class="fmt34">$</span> <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre><span class="fmt37">CPT</span>(G) <span class="fmt34">$</span><span class="fmt21">\textgreater</span><span class="fmt34">$</span> <span class="fmt37">CPT</span>(H) <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre> </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\includegraphics</span>[width=10cm]{Graph1} <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre>A second possible explanation that comes to the same conclusion that we do not agree with </pre>
-	<pre>the statement by Levy and <span class="fmt38">Levy</span> (2002) is the following: </pre>
-	<pre>Looking at the probability weighting of cumulative prospect theory, shows that small </pre>
-	<pre>probabilities are overweighted and moderate and large <span class="fmt39">probabilities</span> are <span class="fmt37">underweighted</span> (see the second graph below).  </pre>
-	<pre> </pre>
-	<pre><span class="fmt19">\includegraphics</span>[width=12cm]{Graph2} <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre>Why do people prefer E over F? In prospect F there is a small probability of a very large </pre>
-	<pre>negative outcome. Since it is a small probability and a <span class="fmt39">negative</span> outcome, people are </pre>
-	<pre>pessimistic according to <span class="fmt37">CPT</span>. Prospect E on the other hand has equal moderate probabilities </pre>
-	<pre>and is hence preferred over a prospect with a small overweighted outcome of loosing 6000 </pre>
-	<pre>with probability 0.25. <span class="fmt19">\\</span> </pre>
-	<pre> </pre>
-	<pre>The same logic holds for prospects G and H. In Prospect H there is a small probability of a </pre>
-	<pre>very large negative outcome. Since it is a small probability and a <span class="fmt39">negative</span> outcome, people </pre>
-	<pre>are pessimistic according to <span class="fmt37">CPT</span> and hence prefer prospect G over <span class="fmt38">prospect</span> H. </pre>
-	<pre> </pre>
-	<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">document</span></span><span class="fmt20">}</span> </pre></body></html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Erin Belles" />
+  <title>Seminar Economics of Psychology of Risk and Time</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="buttondown.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title">Seminar Economics of Psychology of Risk and Time</h1>
+<h2 class="author">Erin Belles</h2>
+</div>
+<p>Assignment 1, Group 7, Deadline: March 11, 2016 TiSEM</p>
+<h1 id="section"></h1>
+<p><strong>Calculate the certainty equivalent of the prospect (0.2, €40; 0.6, €50; 0.2, €30), under:</strong></p>
+<p><strong>a) Expected utility theory with the utility function: <span class="math inline">$u(x) = \frac{x}{10}$</span> with total wealth = 0.</strong></p>
+<p>EV= 0.2 x <span class="math inline">$\frac{40}{10}$</span> + 0.6 x <span class="math inline">$\frac{50}{10}$</span> + 0.2 x <span class="math inline">$\frac{30}{10}$</span> = 4.4 CE: <span class="math inline">$\frac{m}{10}$</span> = 4.4 <span class="math inline">→</span> m=44</p>
+<p>The certainty equivalent is 44</p>
+<p><strong>b) Rank dependent utility with the utility function: <span class="math inline">$u(x) = \frac{x}{10}$</span> and <span class="math inline"><em>w</em>(<em>p</em>)=<em>p</em><sup>2</sup></span> with total wealth = 0.</strong></p>
+<p>Probability of outcome q or better:</p>
+<p>q=40, p=(0.2) + (0.6) = 0.8</p>
+<p>q=50, p=(0.6)</p>
+<p>q=30, p=(0.2) + (0.6) + (0.2) = 1</p>
+<p>Probability outcome is strictly better than q:</p>
+<p>q=40, p=0.6</p>
+<p>q=50, p=0</p>
+<p>q=30, p=(0.2) + (0.6) = 0.8</p>
+<p><span class="math inline"><em>w</em>(<em>p</em>)=<em>p</em><sup>2</sup></span></p>
+<p>w(0.8) - w(0.6) = <span class="math inline">(0.8)<sup>2</sup></span> - <span class="math inline">(0.6)<sup>2</sup></span>= 0.28</p>
+<p>w(0.6) - w(0.0) = <span class="math inline">(0.0)<sup>2</sup></span> - <span class="math inline">(0.0)<sup>2</sup></span>= 0.36</p>
+<p>w(1) - w(0.8) = <span class="math inline">(1)<sup>2</sup></span> - <span class="math inline">(0.8)<sup>2</sup></span> = 0.36</p>
+<p>Expected utility using these updated probability weights is:</p>
+<p>EU = 0.28 x <span class="math inline">$\frac{40}{10}$</span> + 0.36 x <span class="math inline">$\frac{50}{10}$</span> + 0.36 x <span class="math inline">$\frac{30}{10}$</span> = 4</p>
+<p>CE: <span class="math inline">$\frac{m}{10}$</span> = 4 <span class="math inline">→</span> m = 40</p>
+<p>The certainty equivalent is 40.</p>
+<h1 id="section-1"></h1>
+<p><strong>Consider the prospects A = (1, €3000), B = (0.8, €4000; 0.2, €0), C = (0.25, €3000; 0.75, €0), and D = (0.2, €4000; 0.8, €0).</strong></p>
+<p><strong>It has been found (e.g., Starmer, 2000, Journal of Economic Literature) that most people prefer prospect A over prospect B and prospect D over prospect C.</strong></p>
+<p><strong>a) Show that this choice pattern violates Expected Utility theory.</strong></p>
+<p>Under expected utility, preferences for prospect A implies:</p>
+<p>u(3000) <span class="math inline">$\textgreater$</span> 0.8 u(4000) + 0.2 u(0)</p>
+<p><span class="math inline">$\frac{1}{4}$</span>(u(3000) <span class="math inline">$\textgreater$</span> 0.8 u(4000) + 0.2 u(0))</p>
+<p><span class="math inline">→</span> 0.25 u(3000) <span class="math inline">$\textgreater$</span> 0.2 u (4000) + 0.05 u(0)</p>
+<p>+0.75 u(0)</p>
+<p><span class="math inline">→</span> 0.25 u(3000)+ 0.75 u(0) <span class="math inline">$\textgreater$</span> 0.2 u(4000)+ 0.8 u (4000)</p>
+<p>Preferring prospect D to C implies:</p>
+<p>0.2u(4000) + 0.8 u(0) <span class="math inline">$\textgreater$</span> 0.25u(3000) +0.75u(0)</p>
+<p>Therefore, under prospect theory an individual cannot prefer A to B and D</p>
+<p>to C.<br />
+<strong>b) Show that Disappointment theory as presented and parameterized on the slides (i.e., with u(x) = x and θ = 0.0002) can accommodate the observed choice pattern.)</strong></p>
+<p>EV(A) = 3000 D(A) = 3000</p>
+<p>EV(B) = EU = 3200</p>
+<p>D(B)=0.8(4000+0.0002x<span class="math inline">(4000 − 3200)<sup>2</sup></span> + 0.2(0-0.0002x<span class="math inline">(0 − 3200)<sup>2</sup></span>)=2892.8</p>
+<p>Hence, D(A) <span class="math inline">$\textgreater$</span> D(B)<br />
+EV(C) = EU = 750</p>
+<p>D(C)=0.25(3000+0.0002x<span class="math inline">(3000 − 750)<sup>2</sup></span>) + 0.75(0-0.0002x<span class="math inline">(0 − 750)<sup>2</sup></span>)=918.75</p>
+<p>EV(D) = EU = 800</p>
+<p>D(D)=0.2(4000+0.0002x<span class="math inline">(4000 − 800)<sup>2</sup></span>) + 0.8(0-0.0002x<span class="math inline">(0 − 800)<sup>2</sup></span>)=1107.2</p>
+<p>Hence, D(D) <span class="math inline">$\textgreater$</span> D(C)<br />
+<strong>c) Show that Cumulative Prospect Theory can accommodate the choice pattern.</strong></p>
+<p>Using the parametrization by Tversky and Kahnemann</p>
+<p>CPT(A)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">x</th>
+<th align="center">p</th>
+<th align="center"><span class="math inline"><em>π</em></span></th>
+<th align="center">u(x)</th>
+<th align="center"><span class="math inline"><em>π</em></span>U(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">3000</td>
+<td align="center">1</td>
+<td align="center">w+(1) - w+(0) = 1</td>
+<td align="center">1147.8</td>
+<td align="center">1147.8</td>
+</tr>
+</tbody>
+</table>
+<p>CPT(B)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">x</th>
+<th align="center">p</th>
+<th align="center"><span class="math inline"><em>π</em></span></th>
+<th align="center">u(x)</th>
+<th align="center"><span class="math inline"><em>π</em></span>U(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">4000</td>
+<td align="center">0.8</td>
+<td align="center">w+(0.8) - w+(0) = 0.607</td>
+<td align="center">63.245</td>
+<td align="center">1478.47</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+<br />
+CPT(C)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">x</th>
+<th align="center">p</th>
+<th align="center"><span class="math inline"><em>π</em></span></th>
+<th align="center">u(x)</th>
+<th align="center"><span class="math inline"><em>π</em></span>U(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">3000</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.25) = 0.2707</td>
+<td align="center">1147.8</td>
+<td align="center">333.67</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+<br />
+CPT(D)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">x</th>
+<th align="center">p</th>
+<th align="center"><span class="math inline"><em>π</em></span></th>
+<th align="center">u(x)</th>
+<th align="center"><span class="math inline"><em>π</em></span>U(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">4000</td>
+<td align="center">0.2</td>
+<td align="center">w+(0.2) = 0.261</td>
+<td align="center">1478.8</td>
+<td align="center">385.53</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p><span class="math inline">→</span> CPT(A) <span class="math inline">$\textgreater$</span> CPT(B)</p>
+<p><span class="math inline">→</span> CPT(D) <span class="math inline">$\textgreater$</span> CPT(C)</p>
+<h1 id="section-2"></h1>
+<p><strong>Assume Cumulative Prospect Theory as defined and parameterized by Tversky and Kahneman (1992) (see lecture slides). Calculate the certainty equivalents and risk premia of the following prospects:</strong></p>
+<p><strong>a) (0.25, €75; 0.25, €50; 0.25, €25; 0.25, €0)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">x</th>
+<th align="center">p</th>
+<th align="center"><span class="math inline"><em>π</em></span></th>
+<th align="center">u(x) = U(x)</th>
+<th align="center"><span class="math inline"><em>π</em></span>U(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">75</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.25)-w+(0)=0.29074</td>
+<td align="center">44.674</td>
+<td align="center">12.989</td>
+</tr>
+<tr class="even">
+<td align="center">50</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.50)-w+(0.25)=0.12990</td>
+<td align="center">31.268</td>
+<td align="center">4.062</td>
+</tr>
+<tr class="odd">
+<td align="center">25</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.75)-w+(0.50)=0.14763</td>
+<td align="center">16.990</td>
+<td align="center">2.508</td>
+</tr>
+<tr class="even">
+<td align="center">0</td>
+<td align="center">0.25</td>
+<td align="center">w+(1)-w+(0.75)=0.43173</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+<br />
+<span class="math inline"><em>u</em><sup>+</sup>(<em>x</em>)</span> = <span class="math inline"><em>x</em><sup>0.88</sup></span> if x <span class="math inline">≥</span> 0</p>
+<p><span class="math inline"><em>u</em><sup>−</sup>(<em>x</em>)</span> = 2.25 * <span class="math inline">−(−<em>x</em>)<sup>0.88</sup></span> if x <span class="math inline">$\textless$</span> 0 (with <span class="math inline"><em>λ</em></span> = 2.25)<br />
+</p>
+<p><span class="math inline">$w^+(p) = \frac{p^{0.61}}{(p^{0.61}+(1-p)^{0.61})^{1/0.61}}$</span></p>
+<p><span class="math inline">$w^-(p) = \frac{p^{0.69}}{(p^{0.69}+(1-p)^{0.69})^{1/0.69}}$</span><br />
+<span class="math inline">$w^+(0) = \frac{0^{0.61}}{(0^{0.61}+(1)^{0.61})^{1/0.61}}$</span> = 0</p>
+<p><span class="math inline">$w^+(0.25) = \frac{0.25^{0.61}}{(0.25^{0.61}+(0.75)^{0.61})^{1/0.61}}$</span> = 0.29074</p>
+<p><span class="math inline">$w^+(0.50) = \frac{0.50^{0.61}}{(0.50^{0.61}+(0.50)^{0.61})^{1/0.61}}$</span> = 0.42064</p>
+<p><span class="math inline">$w^+(0.75) = \frac{0.75^{0.61}}{(0.75^{0.61}+(0.25)^{0.61})^{1/0.61}}$</span> = 0.56827</p>
+<p><span class="math inline">$w^+(1) = \frac{1^{0.61}}{(1^{0.61}+(0)^{0.61})^{1/0.61}}$</span> = 1<br />
+</p>
+<p>0.29074 - 0 = 0.29074</p>
+<p>0.42064 - 0.29074 = 0.12990</p>
+<p>0.56827 - 0.42064 = 0.14763</p>
+<p>1 - 0.56827 = 0.43173<br />
+<span class="math inline"><em>u</em><sup>+</sup>(75)</span> = <span class="math inline">75<sup>0.88</sup></span> = 44.674</p>
+<p><span class="math inline"><em>u</em><sup>+</sup>(50)</span> = <span class="math inline">50<sup>0.88</sup></span> = 31.268</p>
+<p><span class="math inline"><em>u</em><sup>+</sup>(25)</span> = <span class="math inline">25<sup>0.88</sup></span> = 16.990</p>
+<p><span class="math inline"><em>u</em><sup>+</sup>(0)</span> = <span class="math inline">0<sup>0.88</sup></span> = 0<br />
+CPT = 12.989 + 4.062 + 2.508 + 0 = 19.559</p>
+<p><span class="math inline"><em>C</em><em>E</em><sup>0.88</sup></span> = 19.559 <span class="math inline">→</span> CE = 29.339</p>
+<p>EV = <span class="math inline">$\frac{1}{4}(75)+\frac{1}{4}(50)+\frac{1}{4}(25)+\frac{1}{4}(0)=37.5$</span></p>
+<p>RP = 37.5 - 29.339 = 8.161<br />
+<strong>b) (0.25, €50; 0.25, €25; 0.25, €0; 0.25, -€25)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">x</th>
+<th align="center">p</th>
+<th align="center"><span class="math inline"><em>π</em></span></th>
+<th align="center">u(x) = U(x)</th>
+<th align="center"><span class="math inline"><em>π</em></span>U(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">50</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.25)-w+(0)=0.29074</td>
+<td align="center">31.268</td>
+<td align="center">9.091</td>
+</tr>
+<tr class="even">
+<td align="center">25</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.50)-w+(0.25)=0.12990</td>
+<td align="center">16.990</td>
+<td align="center">2.207</td>
+</tr>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.75)-w+(0.50)=0.14763</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">-25</td>
+<td align="center">0.25</td>
+<td align="center">w-(0.25)-w-(0)=0.29352</td>
+<td align="center">-38.227</td>
+<td align="center">-11.220</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+<br />
+</p>
+<p><span class="math inline">$w^-(0.25) = \frac{0.25^{0.69}}{(0.25^{0.69}+(0.75)^{0.69})^{1/0.69}}$</span> = 0.29352</p>
+<p><span class="math inline">$w^-(0) = \frac{0^{0.69}}{(0^{0.69}+(1)^{0.69})^{1/0.69}}$</span> = 0</p>
+<p><span class="math inline"><em>u</em><sup>−</sup>(−25)</span> = 2.25 * <span class="math inline">−(− − 25)<sup>0.88</sup></span> = -38.227<br />
+</p>
+<p>CPT = 9.091 + 2.207 + 0+ -11.220 = 0.078</p>
+<p><span class="math inline"><em>C</em><em>E</em><sup>0.88</sup></span> = 0.078 <span class="math inline">→</span> CE = 0.055</p>
+<p>EV = <span class="math inline">$\frac{1}{4}(50)+\frac{1}{4}(25)+\frac{1}{4}(0)+\frac{1}{4}(-25)= 12.50 $</span></p>
+<p>RP = 12.5 - 0.055 = 12.445<br />
+<strong>c) (0.25, €25; 0.25, €0; 0.25, -€25; 0.25, -€50)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">x</th>
+<th align="center">p</th>
+<th align="center"><span class="math inline"><em>π</em></span></th>
+<th align="center">u(x) = U(x)</th>
+<th align="center"><span class="math inline"><em>π</em></span>U(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">25</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.25)-w+(0)=0.29074</td>
+<td align="center">16.990</td>
+<td align="center">4.940</td>
+</tr>
+<tr class="even">
+<td align="center">0</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.50)-w+(0.25)=0.12990</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">-25</td>
+<td align="center">0.25</td>
+<td align="center">w-(0.50)-w-(0.25)=0.16047</td>
+<td align="center">-38.227</td>
+<td align="center">-6.134</td>
+</tr>
+<tr class="even">
+<td align="center">-50</td>
+<td align="center">0.25</td>
+<td align="center">w-(0.25)-w-(0)=0.29352</td>
+<td align="center">-70.352</td>
+<td align="center">-20.650</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+<br />
+</p>
+<p><span class="math inline">$w^-(0.50) = \frac{0.50^{0.69}}{(0.50^{0.69}+(0.50)^{0.69})^{1/0.69}}$</span> = 0.45399<br />
+</p>
+<p>0.45399-0.29352=0.16047</p>
+<p><span class="math inline"><em>u</em><sup>−</sup>(−50)</span> = 2.25 * <span class="math inline">−(− − 50)<sup>0.88</sup></span> = -70.352<br />
+CPT = 4.940 + 0 + -6.134 + -20.650 = -21.844</p>
+<p><span class="math inline"><em>C</em><em>E</em><sup>0.88</sup></span> = -21.844 <span class="math inline">→</span> CE = -13.236</p>
+<p>EV = <span class="math inline">$\frac{1}{4}(25)+\frac{1}{4}(0)+\frac{1}{4}(-25)+\frac{1}{4}(-50)= -12.50$</span></p>
+<p>RP = 12.50 - -13.236 = 0.736<br />
+<strong>d) (0.25, €0; 0.25, -€25; 0.25, -€50; 0.25, -€75)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">x</th>
+<th align="center">p</th>
+<th align="center"><span class="math inline"><em>π</em></span></th>
+<th align="center">u(x) = U(x)</th>
+<th align="center"><span class="math inline"><em>π</em></span>U(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">0.25</td>
+<td align="center">w+(0.25)-w+(0)=0.29074</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">-25</td>
+<td align="center">0.25</td>
+<td align="center">w-(0.75)-w-(0.50)=0.17241</td>
+<td align="center">-38.227</td>
+<td align="center">-6.591</td>
+</tr>
+<tr class="odd">
+<td align="center">-50</td>
+<td align="center">0.25</td>
+<td align="center">w-(0.50)-w-(0.25)=0.16047</td>
+<td align="center">-70.352</td>
+<td align="center">-11.289</td>
+</tr>
+<tr class="even">
+<td align="center">-75</td>
+<td align="center">0.25</td>
+<td align="center">w-(0.25)-w-(0)=0.29352</td>
+<td align="center">-100.516</td>
+<td align="center">-29.503</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+<br />
+</p>
+<p><span class="math inline">$w^-(0.75) = \frac{0.75^{0.69}}{(0.75^{0.69}+(0.25)^{0.69})^{1/0.69}}$</span> = 0.62640<br />
+</p>
+<p>0.62640-0.45399= 0.17241</p>
+<p><span class="math inline"><em>u</em><sup>−</sup>(−75)</span> = 2.25 * <span class="math inline">−(− − 75)<sup>0.88</sup></span> = -100.516<br />
+CPT = 0 + -6.591 + -11.289 + -29.503 = -47.383</p>
+<p><span class="math inline"><em>C</em><em>E</em><sup>0.88</sup></span> = -47.383 <span class="math inline">→</span> CE = -31.909</p>
+<p>EV = <span class="math inline">$\frac{1}{4}(0)+\frac{1}{4}(-25)+\frac{1}{4}(-50)+\frac{1}{4}(-75)= -37.50$</span></p>
+<p>RP = -37.50 - -31.909 = -5.591<br />
+</p>
+<h1 id="section-3"></h1>
+<p><strong>Consider the prospects E = (0.5, -3000; 0.5, 4500), F = (0.25, -6000; 0.75, 3000), G = (0.5, -1500; 0.5, 4500), and H = (0.25, -3000; 0.75, 3000). Levy and Levy (2002; Management Science) show that when asked to choose between prospects E and F, 71% of subjects in the laboratory prefer E. In addition, while 76% of subjects prefer to have prospect G rather prospect H. Based on these results, Levy and Levy (2002) conclude that “we reject the S-shaped [utility] function [of CPT].” Do you agree with this conclusion? Why (not)?</strong><br />
+Using the example from the lecture slides, people can prefer E to F and G to H without violating the expectations of an s-shaped utility curve (see the first graph below). The intuition is that losing x hurts more than gaining x brings pleasure. Although people should prefer 0.75 x 3000 to 0.5 x 4500, the possible loss of 6000 with probability of 0.25 hurts too much and will outweigh the extra utility from 0.75 x 3000.<br />
+<br />
+<br />
+<span class="math inline"><em>w</em><sup>+</sup>(<em>p</em>)=<em>w</em><sup>−</sup>(<em>p</em>)=<em>p</em><sup>2</sup></span> ; <span class="math inline"><em>u</em><sup>+</sup>(<em>x</em>)=<em>x</em><sup>5</sup></span> ; <span class="math inline"><em>u</em><sup>−</sup>(<em>x</em>)= − 2<em>x</em><sup>5</sup></span><br />
+CPT(E) = <span class="math inline"><em>w</em><sup>−</sup>(0.5)<em>u</em><sup>−</sup>(−3000)+<em>w</em><sup>+</sup>(0.5)<em>u</em><sup>+</sup>(4500)</span></p>
+<p>= <span class="math inline">0.5<sup>2</sup></span> x (-2) x <span class="math inline">3000<sup>5</sup></span> + <span class="math inline">0.5<sup>2</sup></span> x <span class="math inline">4500<sup>5</sup></span> = 4.6 x <span class="math inline">10<sup>6</sup></span><br />
+CPT(F) = <span class="math inline"><em>w</em><sup>−</sup>(0.25)<em>u</em><sup>−</sup>(−6000)+<em>w</em><sup>+</sup>(0.75)<em>u</em><sup>+</sup>(3000)</span></p>
+<p>= <span class="math inline">0.25<sup>2</sup></span> x (-2) x <span class="math inline">6000<sup>5</sup></span> + <span class="math inline">0.75<sup>2</sup></span> x <span class="math inline">3000<sup>5</sup></span> = -8.35 x <span class="math inline">10<sup>17</sup></span><br />
+CPT(E) <span class="math inline">$\textgreater$</span> CPT(F)<br />
+CPT(G) = <span class="math inline"><em>w</em><sup>−</sup>(0.5)<em>u</em><sup>−</sup>(−1500)+<em>w</em><sup>+</sup>(0.5)<em>u</em><sup>+</sup>(4500)</span></p>
+<p>= <span class="math inline">0.5<sup>2</sup></span> x (-2) x <span class="math inline">1500<sup>2</sup></span> + <span class="math inline">0.25<sup>2</sup></span> x <span class="math inline">4500<sup>5</sup></span> = 4.58 x <span class="math inline">10<sup>17</sup></span><br />
+CPT(H) = <span class="math inline"><em>w</em><sup>−</sup>(0.25)<em>u</em><sup>−</sup>(3000)+<em>w</em><sup>+</sup>(0.75)<em>u</em><sup>+</sup>(3000)</span></p>
+<p>= <span class="math inline">0.25<sup>2</sup></span> x (-2) x <span class="math inline">3000<sup>5</sup></span> + <span class="math inline">0.75<sup>2</sup></span> x <span class="math inline">3000<sup>5</sup></span> = 1.06 x <span class="math inline">10<sup>17</sup></span><br />
+CPT(G) <span class="math inline">$\textgreater$</span> CPT(H)<br />
+<img src="Graph1" alt="image" width="377" /><br />
+A second possible explanation that comes to the same conclusion that we do not agree with the statement by Levy and Levy (2002) is the following: Looking at the probability weighting of cumulative prospect theory, shows that small probabilities are overweighted and moderate and large probabilities are underweighted (see the second graph below).</p>
+<p><img src="Graph2" alt="image" width="453" /><br />
+Why do people prefer E over F? In prospect F there is a small probability of a very large negative outcome. Since it is a small probability and a negative outcome, people are pessimistic according to CPT. Prospect E on the other hand has equal moderate probabilities and is hence preferred over a prospect with a small overweighted outcome of loosing 6000 with probability 0.25.<br />
+The same logic holds for prospects G and H. In Prospect H there is a small probability of a very large negative outcome. Since it is a small probability and a negative outcome, people are pessimistic according to CPT and hence prefer prospect G over prospect H.</p>
+</body>
+</html>
